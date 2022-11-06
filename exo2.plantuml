@@ -1,0 +1,11 @@
+@startuml  exo2
+left to right direction
+actor "Comptable"
+rectangle {
+  usecase "traiter les factures"
+  Comptable --> (traiter les factures)
+  (traiter les factures).> (calculer la remise): include
+  (traitement particulier).> (traiter les factures)
+}
+
+@enduml
