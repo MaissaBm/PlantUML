@@ -5,7 +5,7 @@ rectangle {
   usecase "traiter les factures"
   Comptable --> (traiter les factures)
   (traiter les factures).> (calculer la remise): include
-  (traitement particulier).> (traiter les factures)
+  (traitement particulier).> (traiter les factures): extends
 }
 
 @enduml
